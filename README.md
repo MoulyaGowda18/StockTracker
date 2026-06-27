@@ -2,11 +2,14 @@
 
 A real-time stock analysis dashboard built with Python and Streamlit.
 
+## 🔗 Live Demo
+👉 [Click here to view the live app](https://stocktracker-u5mjudmjq7ynja2oc7xqfn.streamlit.app/)
+
 ## Features
 - 📊 Live candlestick price chart with SMA20 overlay
 - 📉 RSI (14) indicator with overbought/oversold signals
 - 🟢 Automatic BUY/SELL signal detection
-- 🔍 Supports any stock symbol (AAPL, TSLA, MSFT, etc.)
+- 🔍 Supports any stock symbol (AAPL, TSLA, MSFT, NVDA etc.)
 - 📅 Configurable time periods (1mo to 2y)
 
 ## Tech Stack
@@ -16,14 +19,6 @@ A real-time stock analysis dashboard built with Python and Streamlit.
 - Pandas
 - yfinance
 
-## How to Run
-```bash
+## How to Run Locally
 pip install -r requirements.txt
 python -m streamlit run app.py
-```
-
-## Live Demo
-[Click here to view the live app](YOUR_STREAMLIT_URL_HERE)
-
-## Screenshots
-![Dashboard](assets/screenshot.png)
