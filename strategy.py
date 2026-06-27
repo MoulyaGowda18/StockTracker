@@ -3,8 +3,8 @@ import pandas as pd
 
 def generate_signals(data: pd.DataFrame) -> pd.DataFrame:
     """
-    BUY  → RSI < 30 and price above SMA20 (oversold bounce)
-    SELL → RSI > 70 and price below SMA20 (overbought rejection)
+    BUY  → RSI < 35 (oversold)
+    SELL → RSI > 65 (overbought)
     """
     data = data.copy()
 
@@ -18,8 +18,8 @@ def generate_signals(data: pd.DataFrame) -> pd.DataFrame:
 
     data["Signal"] = ""
 
-    buy_mask  = (data["RSI"] < 30) & (data["Close"] > data["SMA20"])
-    sell_mask = (data["RSI"] > 70) & (data["Close"] < data["SMA20"])
+    buy_mask  = data["RSI"] < 35
+    sell_mask = data["RSI"] > 65
 
     data.loc[buy_mask,  "Signal"] = "BUY"
     data.loc[sell_mask, "Signal"] = "SELL"
