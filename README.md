@@ -19,6 +19,13 @@ A real-time stock analysis dashboard built with Python and Streamlit.
 - Pandas
 - yfinance
 
+## Screenshots
+![Dashboard](images/stock_home_dashboard.png)
+![Data Table](images/stock_data_table.png)
+![Signals](images/stock_signals_table.png)
+![AAPL Chart](images/stock_aapl_chart.png)
+![RSI Graph](images/stock_rsi_graph.png)
+
 ## How to Run Locally
 pip install -r requirements.txt
 python -m streamlit run app.py
