@@ -19,6 +19,18 @@ A real-time stock analysis dashboard built with Python and Streamlit.
 - Pandas
 - yfinance
 
+## 📊 AAPL Price Chart
+
+![AAPL Chart](images/stock_aapl_chart.png)
+
+## 📈 RSI + SSMA Analysis
+
+![RSI SSMA Graph](images/stock_rsi_ssma_graph.png)
+
+## 🚦 Generated Trading Signals (Table)
+
+![Signals Table](images/stock_signals_tables.png)
+
 ## How to Run Locally
 pip install -r requirements.txt
 python -m streamlit run app.py
