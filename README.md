@@ -29,7 +29,7 @@ A real-time stock analysis dashboard built with Python and Streamlit.
 
 ## 🚦 Generated Trading Signals (Table)
 
-![Signals Table](images/stock_signals_tables.png)
+![Signals Table](images/stock_signals_table.png)
 
 ## How to Run Locally
 pip install -r requirements.txt
